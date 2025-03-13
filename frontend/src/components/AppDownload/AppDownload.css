@@ -1,0 +1,22 @@
+.app-download {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0 ;
+}
+.app-download h2 {
+  text-align: center;
+  font-size: 39px;
+}
+.app-downloader {
+  display: flex;
+  gap: 30px;
+}
+.app-downloader img {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.app-downloader img:hover {
+  transform: scale(1.06);
+}

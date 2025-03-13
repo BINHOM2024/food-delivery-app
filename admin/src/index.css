@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Outfit ;
+}
+.app-cont{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-color: #878585;
+}
+.cursor{
+    cursor: pointer;
+}

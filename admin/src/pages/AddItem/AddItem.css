@@ -1,0 +1,56 @@
+.add {
+  font-size: 18px;
+  margin-left: 4rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.upload-image img {
+  width: max(8vw, 120px);
+}
+.add .col {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.add input,
+.add textarea {
+  padding: 8px;
+  font-size: 16px;
+}
+.product-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.product-details input {
+  width: 100%;
+}
+.add button {
+  width: 120px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+  background: #000;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .add {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 678px) {
+  .add {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .add {
+    width: 35%;
+  }
+}

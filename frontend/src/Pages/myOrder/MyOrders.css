@@ -1,0 +1,37 @@
+.myOrders{
+    margin: 4rem;
+}
+.items-list{
+    display: grid;
+    grid-template-columns: .5fr 2fr .5fr .5fr 1fr .5fr ;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid;
+    margin-top: 2rem;
+    padding: .5rem 3rem .5rem 1rem;
+}
+.items-list img{
+    width: 50px;
+}
+.items-list .status{
+    font-weight: 600;
+}
+.items-list .status b{
+   color: red;
+}
+.items-list button{
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+@media screen and (max-width:950px) {
+    .items-list{
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 0px;
+    }
+    .items-list button{
+        font-size: 12px;
+    }
+}

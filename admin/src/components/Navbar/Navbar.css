@@ -1,0 +1,12 @@
+
+.navbar{
+    padding:.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar img:first-child{
+    width: 130px;
+}
+.navbar img:last-child{
+    width: 50px;
+}

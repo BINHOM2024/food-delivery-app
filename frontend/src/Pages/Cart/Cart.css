@@ -1,0 +1,98 @@
+.cart {
+  width: 80%;
+  margin: 2rem auto;
+}
+.cart-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  color: rgb(111, 108, 108);
+  margin-bottom: 10px;
+  align-items: center;
+}
+.cart hr {
+  height: 1px;
+  border: 0;
+  background: gray;
+}
+
+.cart-list {
+  color: #000;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.cart-list img {
+  width: 60px;
+}
+.cart-list .remove {
+  cursor: pointer;
+  width: 40px;
+}
+.cart-bottom {
+  display: flex;
+  margin: 4rem 0;
+  justify-items: space-between;
+  gap: 4rem;
+}
+.price-details {
+  width: 80%;
+}
+
+.sub-total-fee,
+.total-fee,
+.delivery-fee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 10px;
+  color: gray;
+}
+.total-fee {
+  color: #000;
+  font-weight: 600;
+}
+.price-details button {
+  border: 0;
+  background-color: tomato;
+  padding:15px 12px;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+
+  color: white;
+  font-weight: 700;
+}
+.promocode {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 10px;
+  font-size: 20px;
+}
+.promocode-inputs {
+  display: flex;
+  background-color: rgb(220, 217, 217);
+}
+.promocode-inputs input {
+  flex: 1;
+  font-size: 18px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  padding-left: 15px;
+  padding: 10px;
+}
+.promocode-inputs button {
+  width: max(9vw, 80px);
+  border: 0;
+  background-color: #393838;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+@media screen and (max-width:800px){
+  .cart-bottom{
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

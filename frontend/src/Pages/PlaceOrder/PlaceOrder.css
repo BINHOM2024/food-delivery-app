@@ -1,0 +1,60 @@
+.place-order {
+display: flex;
+justify-content: space-between;
+  width: 80%;
+  margin: 5rem auto;
+  gap: 20px;
+}
+.place-order-left h2{
+    margin-bottom: 20px;
+}
+.place-order-left {
+  width: 100%;
+  max-width: max(40%, 500px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.place-order-left input {
+  padding: 11px;
+  font-size: 17px;
+  outline-color: tomato;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.place-order-left .fullname {
+  display: flex;
+  gap: 10px;
+}
+.place-order-left .fullname input {
+  width: 100%;
+}
+.place-order-left .state{
+    display: flex;
+   flex-direction: column;
+    gap: 10px;
+}
+.place-order-left .state .address{
+  display: flex;
+  gap: 10px;
+}
+.place-order-left .state .address input{
+  width: 100%;
+}
+.place-order-right{
+     width: 100%;
+  max-width: max(60%, 500px);
+  justify-items: flex-end;
+}
+.place-order-right button{
+    margin-top: 3rem;
+}
+
+@media screen and (max-width:700px) {
+.place-order{
+  flex-direction: column;
+}
+.place-order-right{
+  justify-items: start;
+}
+}
