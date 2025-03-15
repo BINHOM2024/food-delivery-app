@@ -12,7 +12,7 @@ const app = express();
 const PORT =process.env.PORT || 3002;
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: 'https://food-delivery-app-rhf5.onrender.com' }));
 
 connectToDb;
 app.use("/api/food", foodRouter);
