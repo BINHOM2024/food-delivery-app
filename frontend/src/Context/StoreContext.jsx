@@ -8,7 +8,7 @@ const StoreContext = ({ children }) => {
   const [token, setToken] = useState("");
   const [foods_list, setFoods_list] = useState([]);
 
-  const url = "http://localhost:3002";
+  const url = "https://food-delivery-backend-b316.onrender.com";
   const handleRemoveItem = async (id) => {
     setItemCount((prevCounts) => ({
       ...prevCounts,
