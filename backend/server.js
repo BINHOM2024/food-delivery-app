@@ -12,7 +12,20 @@ const app = express();
 const PORT =process.env.PORT || 3002;
 
 app.use(express.json());
-app.use(cors({ origin: 'https://food-delivery-app-rhf5.onrender.com' }));
+const allowedOrigins = [
+  'https://food-delivery-app-rhf5.onrender.com' ,
+  "https://food-delivery-admin-6alb.onrender.com"
+];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+};
+app.use(cors(corsOptions));
 
 connectToDb;
 app.use("/api/food", foodRouter);
